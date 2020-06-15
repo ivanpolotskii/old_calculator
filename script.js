@@ -64,6 +64,14 @@ splitUp.addEventListener('click',()=>{
 delet.addEventListener('click',()=>{
     rez.value = rez.value.slice(0,rez.value.length-1);
 });
+let intervalId;
+delet.addEventListener('mousedown',()=>{
+    intervalId=setInterval(()=>rez.value = rez.value.slice(0,rez.value.length-1),50);
+    delet.addEventListener('mouseup',()=>{
+        clearInterval(intervalId);
+    })
+})
+
 c.addEventListener('click', () => {
     rez.value = '';
 });
