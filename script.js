@@ -15,7 +15,8 @@ parentheses.addEventListener('click', () => {
     if (rez.value.lastIndexOf('(') > rez.value.lastIndexOf(')')) {
         rez.value += ')';
     } else {
-        if (rez.value[rez.value.length - 1] == '+' || rez.value[rez.value.length - 1] == '/' || rez.value[rez.value.length - 1] == '*' || rez.value[rez.value.length - 1] == '-') {
+        if (rez.value[rez.value.length - 1] == '+' || rez.value[rez.value.length - 1] == '/' || rez.value[rez.value.length - 1] == '*' || rez.value[rez.value.length - 1] == '-'
+        ||rez.value=='') {
             rez.value += '(';
         }
     }
