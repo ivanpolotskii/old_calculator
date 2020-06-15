@@ -25,7 +25,8 @@ percent.addEventListener('click', () => {
     rez.value = rez.value + '%';
 });
 num.forEach(num => {
-    num.addEventListener('click', (e) => {
+    num.addEventListener('click', () => {
+
         rez.value += num.textContent;
     });
 });
@@ -53,6 +54,13 @@ minus.addEventListener('click', () => {
     }
     
 });
+splitUp.addEventListener('click',()=>{
+    if (rez.value[rez.value.length - 1] !== '+' && rez.value[rez.value.length - 1] !== '/' 
+        && rez.value[rez.value.length - 1] !== '*' &&
+        rez.value[rez.value.length - 1] !== '-' && rez.value !== '') {
+            rez.value += '/';
+    }
+})
 delet.addEventListener('click',()=>{
     rez.value = rez.value.slice(0,rez.value.length-1);
 });
