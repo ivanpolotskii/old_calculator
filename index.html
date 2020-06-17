@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./null.css">
-    
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/null.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
 </head>
 
 <body>
-    <div class="flex-wrapper">
+    <div class="settings"><i class="fa fa-cogs" aria-hidden="true"></i></div>
+    <div class="popup-wrapper">
+        <div class="popup">
+            <div class="exit"><img src="./img/exit.png" alt=""></div>
+            <div class="menu">
+                <p>Выбор настроек:</p>
+            </div>
+        </div>
+    </div>Added settings menu
+    <div class="left">
         <div class="power"></div>
         <div class="factorial"></div>
 
@@ -51,7 +60,7 @@
         </div>
         <form name="form"><input type="text" name="textview" id="rez" placeholder="0" readonly></form>
     </div>
-    <script src="./script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
